@@ -105,6 +105,9 @@ class AndroidWebView extends Component {
     contentInset: EdgeInsetsPropType,
     onNavigationStateChange: PropTypes.func,
     onMessage: PropTypes.func,
+    saveFormDataDisabled: PropTypes.bool,
+    thirdPartyCookiesEnabled: PropTypes.bool,
+    mixedContentMode: PropTypes.string,
     onContentSizeChange: PropTypes.func,
     startInLoadingState: PropTypes.bool, // force WebView to show loadingView on first load
     style: View.propTypes.style,
