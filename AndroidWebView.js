@@ -208,7 +208,16 @@ class AndroidWebView extends Component {
      * Make upload file available
      */
     uploadEnabledAndroid: PropTypes.bool,
-
+    
+    /*
+    * Used on Android only, controls whether the given list of URL prefixes should
+    * make {@link com.facebook.react.views.webview.ReactWebViewClient} to launch a
+    * default activity intent for those URL instead of loading it within the webview.
+    * Use this to list URLs that WebView cannot handle, e.g. a PDF url.
+    * @platform android
+    */
+    urlPrefixesForDefaultIntent: PropTypes.arrayOf(PropTypes.string),
+    
     /**
      * Boolean that sets whether JavaScript running in the context of a file
      * scheme URL should be allowed to access content from any origin.
